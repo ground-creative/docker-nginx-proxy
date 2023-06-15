@@ -1,4 +1,4 @@
-# Docker Nginx SSL Proxy
+# Docker Nginx Proxy With SSL Layer
 
 This is a docker container to use nginx as a proxy 
 to various other docker containers not visible to the public.
@@ -55,4 +55,4 @@ docker-compose up -d --build
 
 3) Access the container at the specified address in the VIRTUAL_HOST field
 
-	http|https://{VIRTUAL_HOST}
+	(http|https)://{VIRTUAL_HOST}
