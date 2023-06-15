@@ -1,0 +1,19 @@
+# ignore all logs
+*.log
+
+# ignore all ini files
+*.ini
+
+# exclude everything in www
+certs/*
+!certs/.gitkeep
+
+# include these files
+!.gitignore
+!.gitalias
+!.gitattributes
+!.editorconfig
+!.phpcs.xml.dist
+!README.md
+!CHANGELOG.md
+!composer.json
