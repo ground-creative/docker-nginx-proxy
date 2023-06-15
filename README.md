@@ -22,7 +22,7 @@ docker-compose up -d --build
 
 ## Example Container Docker Compose File
 
-1) Create docker-compose.yml file and paste the following:
+1) Create docker-compose.yml file and paste the following
 ```
 version: '3'
 
