@@ -7,7 +7,7 @@ and forward requests docker containers not visible to the public.
 
 1) Clone the repository
 ```
-git clone [https://github.com/ground-creative/docker-wordpress.git](https://github.com/ground-creative/docker-nginx-proxy.git) {folder-name}
+git clone https://github.com/ground-creative/docker-wordpress.git {folder-name}
 ```
 
 2) Create a docker network
