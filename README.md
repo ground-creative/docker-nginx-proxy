@@ -35,7 +35,8 @@ services:
 	  # change the host and email address values
       - VIRTUAL_HOST=somedomain.com
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=address@somedomain.com
+      - LETSENCRYPT_HOST=somedomain.com
+      - LETSENCRYPT_EMAIL=some@email.com
     volumes:
       - ./www/:/usr/share/nginx/html
     networks:
