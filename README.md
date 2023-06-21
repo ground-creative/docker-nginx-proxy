@@ -1,7 +1,7 @@
 # Docker Nginx Proxy With SSL Layer
 
 This is a docker container to use nginx as a proxy 
-and forward requests docker containers not visible to the public.
+to various other docker containers not visible to the public.
 
 ## Installation 
 
@@ -57,3 +57,18 @@ docker-compose up -d --build
 3) Access the container at the specified address in the VIRTUAL_HOST field
 
 	(http|https)://{VIRTUAL_HOST}
+
+## Generating a self signed certificate
+
+Run the following command
+```
+# Change the ${domain} variable to the actual domain name
+openssl req -x509 \           
+    -newkey rsa:4096 \
+    -sha256 \
+    -nodes \
+    -days 365 \
+    -subj "/CN=${domain}"  \
+    -keyout "./certs/${domain}" \
+    -out "./certs/${domain}"
+```
